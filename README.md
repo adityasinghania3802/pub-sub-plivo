@@ -305,7 +305,6 @@ Dockerfile is multi-stage:
 
 -   If the UI logs are empty, ensure the backend is running on 4000 and client `.env` points to it; restart `npm run dev` in `client/`
 -   To test backpressure, temporarily set `subscriberQueueSize` low (e.g., 5) in `server/src/index.ts` and publish many messages; check `/stats` for `dropped` count
--   TypeScript: if editor flags `process` in tests, ensure `server/tsconfig.json` has `"types": ["node"]` (already set)
 
 ## What’s implemented
 
